@@ -1,0 +1,22 @@
+---
+interface Props {
+  url: string;
+  img: string;
+  alt: string;
+}
+
+const { url,img,alt } = Astro.props;
+---
+
+<a href={url} class="icon">
+  <img src={img} alt={alt}>
+</a>
+<style>
+  .icon {
+    color: beige;
+    scale: .5;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+</style>
